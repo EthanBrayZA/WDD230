@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: #f8fae5;
+}
+header {
+    background-color: #43766c;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+}
+nav {
+    background-color: #b19470;
+    text-align: center;
+}
+nav a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    border: 1px solid #43766c;
+}
+ul {
+    list-style: none;
+}
+hr {
+    max-width: 90%;
+}
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 1rem;
+}
+.card {
+    border: 1px solid #272626;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px #343333;
+}
+.card ul {
+    text-align: left;
+    padding: 1rem;
+}
+
+.card a{
+    color: blue;
+}
+
+.lastModified {
+    color: yellow;
+}
+
+.card h2{
+    display: block;
+    background-color: #76453b;
+    padding: 1rem;
+}
+footer {
+    background-color: #43766c;
+    padding: 1rem;
+}
+
