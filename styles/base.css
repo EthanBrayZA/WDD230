@@ -28,7 +28,7 @@ nav a{
     text-decoration: none;
 }
 nav a:hover {
-    border: 1px solid #43766c;
+    border: 1px solid #442d11;
 }
 ul {
     list-style: none;
@@ -63,7 +63,7 @@ div {
 
 .card h2{
     display: block;
-    background-color: #76453b;
+    background-color: #b19470;
     padding: 1rem;
 }
 footer {
