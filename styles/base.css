@@ -12,6 +12,7 @@ header {
     justify-content: center;
 }
 header span {
+    color: #f8fae5;
     display: inline;
     font-size: 2rem;
     padding: 1rem;
@@ -67,7 +68,8 @@ div {
     padding: 1rem;
 }
 footer {
-    background-color: #43766c;
+    color: #fff;
+    background-color: #76453B;
     padding: 1rem;
 }
 
