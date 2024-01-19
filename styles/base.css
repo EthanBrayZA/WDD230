@@ -17,6 +17,78 @@ header span {
     font-size: 2rem;
     padding: 1rem;
 }
+
+#menu {
+    font-size: 1.5rem;
+    /*  border left out of dark mode */
+    padding: 3px 7px 6px;
+    background-color: #b19470;
+    /* position: relative; */
+    position: absolute;
+    top: 5.6rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #b19470;
+}
+.navigation li {
+    /* list-style-type: none; */
+    display: none;
+}
+
+/* both nav li and hover are left out of dark mode */
+.navigation li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    border: #442d11;
+}
+
+.navigation li a:active {
+    background-color: #502F4C;
+    color: #C8B8DB;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+.stuff {
+    /* margin: .5m; */
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+
+}
+
 nav {
     background-color: #b19470;
     text-align: center;
@@ -66,10 +138,21 @@ div {
     display: block;
     background-color: #b19470;
     padding: 1rem;
+    color: black;
 }
 footer {
     color: #fff;
     background-color: #76453B;
     padding: 1rem;
+}
+
+/* dark Mode */
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
