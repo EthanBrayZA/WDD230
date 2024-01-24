@@ -22,16 +22,23 @@
 
 </head>
 <body>
+    <div id="mode">
+        ☆
+    </div>
+
     <header>
         <h1>Cape Town Chamber of Commerce</h1>
     </header>
 
-    <nav><ul>
+    <nav>
+    <button id="menu"></button>
+        <ul class="navigation">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Chamber</a></li>
+        <li><a href="index.html">Chamber</a></li>
         <li><a href="#">Site Plan</a></li>
         <li><a href="#">Form</a></li>
-    </ul></nav>
+    </ul>
+    </nav>
 
     <main>
         <section id="hero">
@@ -39,22 +46,41 @@
         </section>
 
         <section id="cta">
-            <h2>Join the Chamber of Commerce</h2>
-            <p>Discover the benefits of becoming a member and contribute to the business community.</p>
-            <a href="#" class="cta-button">Join Now</a>
+            <a href="#" class="cta-button">Join the Chamber</a>
         </section>
 
-        <section id="current-events">
-            <h2>Current Events</h2>
-            <p>Stay updated on the latest happenings in the business world.</p>
-        </section>
+            <section class="current-events">
+                <h2>Events</h2>
+                <h3>###</h3>
+                <p>###</p>
+            </section>
 
-        <section id="weather">
-            <h2>Weather</h2>
-        </section>
 
-        <section id="spotlights">
-            <h2>Company Spotlights</h2>
+            <section class="weather-card">
+                <h2>Weather</h2>
+                <div class="weather">
+                    <h5>Current Temp in Cape Town: <span id="currentTemp"></span></h3>
+                    <h5>Humidity: <span id="humidity"></span></h5>
+                    <h5>Wind Chill: <span id="windChill"></span></h3>
+                </div>
+
+                <div id="weather-forecast"></div>
+            </section>
+
+        <section class="spotlights">
+            <h2>----- Spotlights -----</h2>
+            <div class='spotlight-cards'>
+                <h3>####</h3>
+                <p>#####</p>
+            </div>
+            <div class='spotlight-cards'>
+                <h3>####</h3>
+                <p>#####</p>
+            </div>
+            <div class='spotlight-cards'>
+                <h3>####</h3>
+                <p>#####</p>
+            </div>
         </section>
     </main>
 
@@ -68,5 +94,6 @@
 
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkBurger.js"></script>
 </body>
 </html>

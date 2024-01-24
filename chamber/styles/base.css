@@ -67,13 +67,6 @@
     padding: 1em;
   }
   
-  nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-  }
-  
   nav ul {
     list-style-type: none;
     display: flex;
@@ -105,4 +98,71 @@
   address a {
     color: var(--nav-link-color);
   }
-  
+
+/*-------------------------- Test -------------------------------*/
+
+  #mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.57rem;
+    cursor: pointer;
+}
+
+
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, .3);
+  padding: 3px 7px 6px;
+  background-color: var(--headline-color-on-color);
+  color: var(--paragraph-color-on-white);
+  position: absolute;
+  top: 5.6rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--nav-background-color);
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--nav-link-color);
+}
+
+.navigation li a:hover {
+  background-color: var(--nav-hover-link-color);
+  color: var(--nav-hover-background-color);
+}
+
+.open li {
+  display: block;
+  width: 100%;
+}
+
+.open li a {
+  display: block;
+}
+
+.active::before {
+  content: "📍 ";
+}
+
