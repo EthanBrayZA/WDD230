@@ -14,7 +14,6 @@ const header = document.querySelector("header");
 const menu = document.querySelector("#menu");
 const footer = document.querySelector("footer");
 const body = document.querySelector("body");
-const card = document.querySelector(".card");
 const mode = document.querySelector("#mode");
 
 
@@ -37,29 +36,25 @@ modeButton.addEventListener("click", () => {
 
         body.style.background = "#0F1035";
 
-        card.style.border = "1px solid #7FC7D9";
-
         modeButton.textContent = "☀";
     }
     else {
         // Light mode colors
-        main.style.background = "#0F1035";
-        main.style.color = "#DCF2F1";
+        main.style.background = "#fff";
+        main.style.color = "#0F1035";
 
-        header.style.background = "#365486";
-        header.style.color = "#d6f7ff";
+        header.style.background = "#0F1035";
+        header.style.color = "#7FC7D9";
 
         modeButton.style.color = "#d6f7ff";
 
-        menu.style.background = "#365486";
-        menu.style.color = "#d6f7ff";
+        menu.style.background = "#0F1035";
+        menu.style.color = "#0F1035";
 
-        footer.style.background = "#365486";
-        footer.style.color = "#d6f7ff";
+        footer.style.background = "#0F1035";
+        footer.style.color = "#DCF2F1";
 
-        body.style.background = "#7FC7D9";
-
-        card.style.border = "1px solid #0F1035";
+        body.style.background = "#fff";
 
         modeButton.textContent = "☆";
         

@@ -107,6 +107,7 @@
     right: 1rem;
     font-size: 1.57rem;
     cursor: pointer;
+    color: var(--primary-color);
 }
 
 
