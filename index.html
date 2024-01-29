@@ -25,7 +25,7 @@
         ☆
     </div>
     <header>
-        <img src="images/portrait.jpg" alt="Ethan Bray Profile" width="75" height="100">
+        <img src="images/portrait.webp" alt="Ethan Bray Profile" width="75" height="100">
         <span>Ethan D. Bray</span>
     </header>
     <nav>
@@ -37,7 +37,20 @@
             <li><a href="">Form</a></li>
         </ul>
     </nav>
+
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
+            <img src="images/po" alt="Mesa Temple" width="1500" height="750">
+        </picture>
+        <div class="herolabel">
+            <p>Mesa Arazona Temple</p>
+        </div>
+    </div>
+
     <main>
+        
         <h1>WDD 230: Web Frontend Development</h1>
         <hr>
         <div>
@@ -61,6 +74,8 @@
             </section>
         </div>
     </main>
+    <iframe src="" frameborder="0" Loading="lazy"></iframe>
+
     <footer>
         <p>&copy; <span id="year"></span> Ethan Bray, South Africa </p>
         <p>Last Modified: <span id="lastModified"></span></p>

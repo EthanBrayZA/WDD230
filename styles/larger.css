@@ -14,6 +14,14 @@
         display: none;
         /* hide hamburger button */
     }
+    .herolabel p {
+        font-size: clamp(1px, 4vw, 40px);
+        white-space: nowrap;
+    }
+
+    .herolabel {
+        top: clamp(1px, 4vw, 40px);
+    }
 
     .navigation {
         flex-direction: row;
@@ -24,4 +32,6 @@
         display: block;
         flex: 1 1 100%;
     }
+
+   
 }
