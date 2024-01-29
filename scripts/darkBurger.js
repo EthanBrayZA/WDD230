@@ -7,7 +7,7 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-/* dark Mode */
+/* dark Mode 
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const header = document.querySelector("header");
@@ -87,4 +87,4 @@ modeButton.addEventListener("click", () => {
 
         modeButton.textContent = "☆";
     }
-});
+});*/
