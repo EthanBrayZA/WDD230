@@ -188,6 +188,9 @@ div {
 .card p {
     text-align: center;
 }
+iframe {
+    padding: 1rem;
+}
 footer {
     color: #fff;
     background-color: #76453B;
