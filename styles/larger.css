@@ -23,6 +23,11 @@
         top: clamp(1px, 4vw, 40px);
     }
 
+    .hero img {
+        width: 100%;
+        height: auto;
+      }
+
     .navigation {
         flex-direction: row;
         margin: 0;
@@ -33,5 +38,4 @@
         flex: 1 1 100%;
     }
 
-   
 }

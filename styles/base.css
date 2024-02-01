@@ -2,6 +2,8 @@ body {
     font-family: 'Roboto', 'Lato', sans-serif;
     font-weight: 400;
     background-color: #f8fae5;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 header {
     background-color: #43766c;
@@ -149,6 +151,10 @@ div {
     height: 60vh;
     overflow: hidden;
 }
+.hero img {
+    width: 100%;
+    height: auto;
+  }
 
 .hero picture {
     width: 100%;
@@ -179,8 +185,9 @@ div {
     font-family: 'Roboto', 'Lato', serif;
     min-width: 165px;
 }
-
-
+.card p {
+    text-align: center;
+}
 footer {
     color: #fff;
     background-color: #76453B;

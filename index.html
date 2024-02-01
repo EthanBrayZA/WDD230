@@ -42,7 +42,7 @@
         <picture>
             <source media="(max-width: 400px)" srcset="images/hero-small.webp">
             <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
-            <img src="images/po" alt="Mesa Temple" width="1500" height="750">
+            <img src="images/hero-large.webp" alt="Mesa Temple" width="960" height="600">
         </picture>
         <div class="herolabel">
             <p>Mesa Arazona Temple</p>
@@ -60,7 +60,7 @@
                 <ul>
                     <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/EthanBrayZA/pen/mdorbWW">JS Pen</a></li>
                     <li>Week 02:<a href="week02/design.html">Web Design</a> | <a href="https://codepen.io/EthanBrayZA/pen/yLwMoRO">Hamburger</a> | <a href="week02/bom.html">BOM DOM</a></li>
-                    <li>Week 03:<a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Load</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html"></a>Storage</li>
+                    <li>Week 03:<a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Load</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">Storage</a></li>
                     <li>Week 04:<a href=""></a></li>
                     <li>Week 05:<a href=""></a></li>
                     <li>Week 06:<a href=""></a></li>
@@ -70,11 +70,13 @@
 
             <section class="card">
                 <h2>Information</h2>
-
+                <p><span>Visit Count: </span><span class="num-visits"></span></p>
             </section>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2129.333112402907!2d27.89263228370166!3d-26.160964952011906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1706773852706!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-    <iframe src="" frameborder="0" Loading="lazy"></iframe>
+    
 
     <footer>
         <p>&copy; <span id="year"></span> Ethan Bray, South Africa </p>
@@ -82,5 +84,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/darkBurger.js"></script>
+    <script src="scripts/numVisits.js"></script>
 </body>
 </html>
