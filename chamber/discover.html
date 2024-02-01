@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Bray - WDD 230 - Web Frontend Development</title>
+    <meta name ="description" content="WDD 230 - Ethan Bray - Web Frontend Development course assignment portal used to access all my course assignments">
+    <meta name="author" content="Ethan Douglas Bray">
+
+    <meta property="og:title" content="WDD Course Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/14/10/2e/1e/cape-town.jpg">
+    <meta property="og:url" content="https://ethanbrayza.github.io/wdd230/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/portrait.webp" alt="Ethan Bray Profile" width="75" height="100">
+        <span>Ethan D. Bray</span>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-main">
+        <div class="sidebar">
+            <!-- Sidebar content goes here -->
+        </div>
+        <div class="main-content">
+            <!-- Placeholder for lazy-loaded images -->
+            <img data-src="https://placehold.co/400x400" alt="Photo 1" loading="lazy">
+            <img data-src="//via.placeholder.com/400x600/" alt="Photo 2" loading="lazy">
+            <img data-src="//via.placeholder.com/400x600/" alt="Photo 3" loading="lazy">
+            <img data-src="//via.placeholder.com/400x600/" alt="Photo 4" loading="lazy">
+            <img data-src="//via.placeholder.com/400x600/" alt="Photo 5" loading="lazy">
+            <img data-src="//via.placeholder.com/400x600/" alt="Photo 6" loading="lazy">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ethan Bray, South Africa </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/darkBurger.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
