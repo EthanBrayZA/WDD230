@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Bray - WDD 230 - Web Frontend Development - Form</title>
+    <meta name ="description" content="WDD 230 - Ethan Bray - Web Frontend Development Form">
+    <meta name="author" content="Ethan Douglas Bray">
+
+    <meta property="og:title" content="WDD Course Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/14/10/2e/1e/cape-town.jpg">
+    <meta property="og:url" content="https://ethanbrayza.github.io/wdd230/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/portrait.webp" alt="Ethan Bray Profile" width="75" height="100">
+        <span>Ethan D. Bray</span>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="formmessage"></div>
+
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Join A Team - Form</legend>
+                <label class="top">Username <input type="text" id="username" name="username" required></label>
+                <label class="top">Password <input type="password" id="password" name="password"
+                        required pattern="[a-zA-Z0-9]{8,}">
+                </label>
+                <label class="top">Re-enter Your Password <input type="password" id="password2" name="password2"
+                        required pattern="[a-zA-Z0-9]{8,}"></label>
+                <label class="top">Email <input type="email" id="email" name="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rating</legend>
+                <label class="sbs">Page Rating</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
+
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+            </fieldset>
+
+            <input type="submit" value="Join Your Team Now" class="submitBtn">
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ethan Bray, South Africa </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkBurger.js"></script>
+</body>
+</html>
