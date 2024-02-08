@@ -183,6 +183,13 @@
   border-radius: 10px;
 }
 
+.sidebar-content {
+  background-color: var(--accent1-color);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .main-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid for images */
