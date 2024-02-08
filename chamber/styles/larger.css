@@ -25,4 +25,11 @@
         display: block;
         flex: 1 1 100%;
     }
+
+    .discover-main {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr; /* Sidebar and main content columns */
+        gap: 20px;
+        padding-top: 1rem;
+      }
 }
