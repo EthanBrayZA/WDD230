@@ -32,4 +32,26 @@
         gap: 20px;
         padding-top: 1rem;
       }
+
+      /*------------------------ Join ----------------- */
+
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    form {
+        grid-column: 2 / 3;
+    }
+
+    .membership-level {
+        grid-column: 1 / 2;
+    }
+      
+    .membership-level .level {
+        /* Set level sections to display in a single column */
+        grid-column: 1;
+    }
+
 }

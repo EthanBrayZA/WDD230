@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Bray - WDD 230 - Web Frontend Development - Chamber of Commerce Join Page</title>
+    <meta name ="description" content="Cape Town Chamber of Commerce Join Page Form">
+    <meta name="author" content="Ethan Douglas Bray">
+
+    <meta property="og:title" content="WDD Course Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/14/10/2e/1e/cape-town.jpg">
+    <meta property="og:url" content="https://ethanbrayza.github.io/wdd230/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Cape Town Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main class="join-main">
+
+        <div class="membership-level">
+            <h2>Membership Level Benefits</h2>
+
+            <section class="level">
+                <h3>NP Membership (Non Profit Organization)</h3>
+                <p>Annual Membership Fee: None ()</p>
+                <p>Description of NP Membership:</p>
+                <ul>
+                    <li>Tailored for non-profit organizations dedicated to community betterment. Enjoy the full spectrum
+                        of Chamber benefits without any membership fees.</li>
+                </ul>
+            </section>
+
+            <section class="level">
+                <h3>Bronze Membership</h3>
+                <p>Annual membership Fee: R2 000</p>
+                <p>Benefits of Bronze Membership:</p>
+                <ul>
+                    <li>Basic listing in the Chamber's online directory.</li>
+                    <li>Participation in Chamber networking events.</li>
+                    <li>Access to chamber news and business updates in the area.</li>
+                    <li>Access to member-exclusive webinars and training sessions.</li>
+                </ul>
+            </section>
+
+            <section class="level">
+                <h3>Silver Membership</h3>
+                <p>Annual membership Fee: R4 000</p>
+                <p>Benefits of Silzer Membership:</p>
+                <ul>
+                    <li>Benefits of previous membership.</li>
+                    <li>Featured listing in the Chamber's online directory.</li>
+                    <li>Priority access to Chamber-sponsored events and workshops.</li>
+                    <li>Opportunity to host or sponsor a Chamber event.</li>
+                    <li>5% discount for the following year's membership.</li>
+                </ul>
+            </section>
+
+            <section class="level">
+                <h3>Gold Membership</h3>
+                <p>Annual membership Fee: R6 000</p>
+                <p>Benefits of Gold Membership:</p>
+                <ul>
+                    <li>Benefits of previous membership.</li>
+                    <li>10% discount for the following year's membership.</li>
+                    <li>Prominent logo placement on the Chamber's website</li>
+                    <li>Exclusive access to high-profile Chamber events and VIP networking opportunities.</li>
+                    <li>Dedicated marketing support, including social media features and press releases.</li>
+                    <li>Direct participation in decisions to improve the Chamber of Commerce in the local area and to
+                        implement plans to support smaller businesses.</li>
+                </ul>
+            </section>
+        </div>
+
+
+
+        <form method="get" action="thankyou.html">
+
+            <h2>Join the Roodepoort Chamber of Commerce</h2>
+
+            <fieldset>
+                <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label class="top">Email Address* <input type="email" name="email" placeholder=" someone@gmail.com"
+                        required></label>
+                <label class="top">Mobile Phone Number* <input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label class="top">Business / Organization's name* <input id="bname" name="bname"
+                        required></label>
+                <label class="top">Title / Position *<input type="text" id="title" name="title"
+                        pattern="[a-zA-Z\- ]{7,}" required></label>
+                <label class="top"> Business / Organization's Description<input type="text" id="description"
+                        name="description"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="sbs"><input type="radio" name="membership" value="nb"> NP Membership is for non profit
+                    organizations | no fee.</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            </fieldset>
+
+            <fieldset>
+                <label class="timestamp"> Timestamp<input type="hidden" name="timestamp" id="timestamp"></label>
+            </fieldset>
+
+            <input type="submit" value="Join The Chamber" class="submitBtn">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ethan Bray, South Africa </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkBurger.js"></script>
+    <script src="scripts/numVisits.js"></script>
+</body>
+</html>
