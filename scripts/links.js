@@ -1,5 +1,5 @@
-const baseURL = "https://EthanBrayZA.github.io/wdd230/";
-const linksURL = "https://EthanBrayZA.github.io/wdd230/data/links.json";
+const baseURL = "https://ethanbrayza.github.io/wdd230/";
+const linksURL = "https://ethanbrayza.github.io/wdd230/data/links.json";
 
 const activityList = document.getElementById("activity-list");
 
@@ -15,30 +15,26 @@ async function getLinks() {
 }
 
 function displayLinks(weeks) {
-
-
     weeks.forEach((week) => {
         const weekElement = document.createElement("li");
-        weekElement.textContent = week.week;
-
+        let weekText = week.week + " ";
         const linksList = document.createElement("ul");
 
         // Loop through each link in the week
-        week.links.forEach((link) => {
-            const li = document.createElement("li");
+        week.links.forEach((link, index) => {
             const a = document.createElement("a");
-
             a.href = baseURL + link.url;
             a.textContent = link.title;
 
-            li.appendChild(a);
-            linksList.appendChild(li);
+            if (index > 0) {
+                weekText += " | ";
+            }
+            weekText += a.outerHTML;
         });
 
-        weekElement.appendChild(linksList);
+        weekElement.innerHTML = weekText;
         activityList.appendChild(weekElement);
-
     });
-};
+}
 
 getLinks();

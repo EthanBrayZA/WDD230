@@ -218,3 +218,31 @@ footer {
     font-size: 2rem;
 }
 
+/*-------------------Weather API-----------------------*/
+
+/* Style for the temperature span */
+#current-temp {
+    font-weight: bold;
+    color: #0099ff; /* Adjust color as needed */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Style for the figure */
+figure {
+    margin-top: 30px; /* Adjust margin as needed */
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the weather icon */
+#weather-icon {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Style for the figcaption */
+figcaption {
+    font-size: 14px;
+    padding-left: 1rem;
+}
