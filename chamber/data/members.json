@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Saint International",
+            "addresse": "30 Struben Ave",
+            "phone": "081 244 9053",
+            "website": "https://saint-international",
+            "image": "images/saint-international.png",
+            "membershiplevel": "Gold Membership",
+            "NPmember": false
+        },
+        {
+            "name": "The Church of Jesus Christ Of latter day Saints",
+            "addresse": "3 Philips Ave",
+            "phone": "017 369 1478",
+            "website": "https://lds.org",
+            "image": "images/lds-logo.jpg",
+            "membershiplevel": "NP Membership",
+            "NPmember": true
+        },
+        {
+            "name": "Western Rackets",
+            "addresse": "27 lys Ave",
+            "phone": "025 789 9517",
+            "website": "https://western-rackets",
+            "image": "images/western-rackets.png",
+            "membershiplevel": "Silver Membership",
+            "NPmember": false
+        },
+        {
+            "name": "LightWay Utilities",
+            "addresse": "56 Christiaan de Wet RD",
+            "phone": "032 753 4561",
+            "website": "https://LightWay-Utilities",
+            "image": "images/lightway.jpeg",
+            "membershiplevel": "Bronze Membership",
+            "NPmember": false
+        },
+        {
+            "name": "InGen",
+            "addresse": "98 Honeyball Ave",
+            "phone": "086 931 7524",
+            "website": "https://ingen",
+            "image": "images/ingen.png",
+            "membershiplevel": "Bronze Membership",
+            "NPmember": false
+        },
+        {
+            "name": "Speedo Deliveries",
+            "addresse": "2 Anstruther St",
+            "phone": "095 764 3394",
+            "website": "https://Speedo-Deliveries",
+            "image": "images/speedo.png",
+            "membershiplevel": "Silver Membership",
+            "NPmember": false
+        },
+        {
+            "name": "African Adventures For Youth",
+            "addresse": "105 Ontdekkers Rd",
+            "phone": "099 725 6577",
+            "website": "https://african-adventures-for-youth",
+            "image": "images/african-adventures.png",
+            "membershiplevel": "Gold Membership",
+            "NPmember": false
+        }
+    ]
+}

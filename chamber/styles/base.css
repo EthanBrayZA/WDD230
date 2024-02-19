@@ -293,3 +293,73 @@ form input.submitBtn {
 .level h3 {
   text-decoration: underline;
 }
+
+/* ------------------------------ Directory Page ---------------------------- */
+/* Center the Button */
+#directory-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Grid View */
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.directory-cards section {
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  color: var(--color);
+  width: 350px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* List View */
+.directory-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+}
+
+.directory-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.directory-list section {
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  width: 350px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.directory-list section img {
+  display: none;
+}
+
+.directory-cards section img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.directory-list section:nth-child(odd) {
+  background-color: var(--accent1-color);
+  color: black;
+}
+
+.directory-list section:nth-child(even) {
+  background-color: var(--accent2-color);
+  color: black;
+}
+
+#directory-menu {
+  padding-top: 2rem;
+} 
