@@ -37,46 +37,67 @@
     </nav>
 
     <main>
-        <section id="hero">
-            <img src="images/cape-town.jpeg" alt="Hero Image">
-        </section>
+        <div id="banner">
+            <p>Join our Meet & Greet!</p>
+            <p>Wednesday at 7:00 p.m.</p>
+            <button id="close-banner"></button>
+        </div>
 
-        <section id="cta">
-            <a href="join.html" class="cta-button">Join the Chamber</a>
-        </section>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Picture of Cape Town" width="1160px" height="600">
+            </picture>
+
+            <div class="button-box">
+                <a href="join.html" class="join">Join The Chamber</a>
+            </div>
+        </div>
+
+        <div class="section-grid">
 
             <section class="current-events">
-                <h2>Events</h2>
-                <h3>###</h3>
-                <p>###</p>
+                <h2>Upcoming Events</h2>
+                <div class="events">
+                    <h3>Christmas Chamber Mixer</h3>
+                    <p>Join us for a Christmas mixer night under the stars at 3 phillips ave</p>
+                    <p>December 8th</p>
+                    <p>7pm</p>
+                </div>
+
+                <div class="events">
+                    <h3>Christmas Chamber Fund Raiser</h3>
+                    <p>A christmas Fund Raiser to raise money for all those in neext this christmas season at Monte
+                        Casino</p>
+                    <p>December 2nd, until December 6th</p>
+                    <p>6pm - 11pm</p>
+                </div>
             </section>
 
 
             <section class="weather-card">
                 <h2>Weather</h2>
                 <div class="weather">
-                    <h5>Current Temp in Cape Town: <span id="currentTemp"></span></h3>
-                    <h5>Humidity: <span id="humidity"></span></h5>
-                    <h5>Wind Chill: <span id="windChill"></span></h3>
+                    <h3>Current Temp in Cape Town</h3>
+
+                    <figure>
+                        <img id="weather-icon" src="#" alt="#">
+                        <p><span id="current-temp"></span></p>
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <h3>Three Day Forecast</h3>
                 </div>
 
                 <div id="weather-forecast"></div>
             </section>
 
+        </div>
+
         <section class="spotlights">
             <h2>----- Spotlights -----</h2>
-            <div class='spotlight-cards'>
-                <h3>####</h3>
-                <p>#####</p>
-            </div>
-            <div class='spotlight-cards'>
-                <h3>####</h3>
-                <p>#####</p>
-            </div>
-            <div class='spotlight-cards'>
-                <h3>####</h3>
-                <p>#####</p>
-            </div>
+            <div class='spotlight-cards'></div>
         </section>
     </main>
 
@@ -91,5 +112,8 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/darkBurger.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

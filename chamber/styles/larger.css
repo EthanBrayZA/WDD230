@@ -54,4 +54,28 @@
         grid-column: 1;
     }
 
+    
+    /* ---------------------------- Home / Main Page ------------------- */
+
+    .section-grid {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-gap: 1.2rem;
+    }
+
+    .spotlight-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    #weather-forecast {
+        background-color: var(--headline-color-on-color);
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        border: var(--border);
+    }
+
 }
