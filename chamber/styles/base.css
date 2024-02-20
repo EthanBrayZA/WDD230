@@ -131,6 +131,11 @@
     flex-direction: column;
 }
 
+.events {
+  margin-bottom: 20px; /* Add some space between events */
+  display: block; /* Display events as blocks */
+}
+
 .weather-card h2,
 .current-events h2 {
     padding: 1.5rem;
@@ -165,14 +170,15 @@
 }
 
 #weather-forecast {
-  background-color: var(--headline-color-on-color);
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  border: var(--border);
-  overflow-x: auto; /* Add horizontal scroll if needed */
-  padding: 20px; /* Add padding to create space around the forecast cards */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 100%; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#weather-forecast > * {
+  display: inline-block; /* Display forecast items in a row */
+  min-width: 120px; /* Set a minimum width for each forecast item */
+  border-radius: 5px; /* Add rounded corners to each item */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to each item */
 }
 /*-------------------------------------------------------------------*/
   h1,
@@ -188,6 +194,10 @@
   h2 {
     text-align: center;
   }
+
+  #lastModified {
+    color: yellow;
+}
 
   header {
     padding: 1em;
